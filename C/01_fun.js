@@ -1,31 +1,34 @@
 // 1
 
 
-// function sayMyMood() {
+function sayMyMoods() {
     
-// console.log("H");
-// console.log("A");
-// console.log("P");
-// console.log("P");
-// console.log("y");
+console.log("H");
+console.log("A");
+console.log("P");
+console.log("P");
+console.log("y");
 
 
-// }
+}
 
-//sayMyMood() // run output
+sayMyMoods() // run output
 
-// function addNumber(number1, number2) {
+
+// 2 
+
+function addNumbers(number1, number2) {
   
-//     console.log( number1 + number2);  // (number1, number2) parameter
+    console.log( number1 + number2);  // (number1, number2) parameter
     
-// }
+}
 
-// addNumber(6,5)  //(4,6) argument
+addNumbers(6,5)  //(4,6) argument
 
-// const result = addNumber(6,5)
+//  const result = addNumbers(6,5)
 
 
-// 2
+// 3
 
 function addNumber(number1, number2) {
   
@@ -40,9 +43,9 @@ const result = addNumber(6,5)
 addNumber(6,5)
 
 
-console.log("Result:", result);
+// console.log("Result:", result);
 
-// 3 
+// 4
 
 function loginUser(username) {
     return `${username} just logged in`
@@ -52,7 +55,7 @@ function loginUser(username) {
 // loginUser("Hello")
 console.log(loginUser("hello"));
 
-// 4
+// 5
 
 function loginCode(id) { //  or (id ="shiv")
     if(id === undefined){  // or true or false !id
@@ -62,5 +65,64 @@ function loginCode(id) { //  or (id ="shiv")
     return `${id} just logged in`
 }
 
-console.log(loginCode()); // imp int  op undefined
+console.log(loginCode()); // imp interview  op undefined
 
+
+// 6 
+
+function calCartPrice(...num1) { // ... rest operater (iska matlab ye muze open me mil raha hai ise sath me pack kar do )
+                                // imp interview -. val1,val2,
+    return num1
+
+}
+
+console.log(calCartPrice(300,500,200,700));  // op array imp ...
+
+
+// 7 
+
+function calCartPrices(val1,val2,...num1) {   // imp interview -. val1,val2, jite val denge usta he op dega
+
+   
+return num1
+
+}
+
+console.log(calCartPrices(300,500,200,700));
+
+
+// 8
+
+const user ={
+    username: "Shivram",
+    price: 399
+}
+
+function handleObj(anyobje) {
+
+    console.log(`username is ${anyobje.username} and price is ${anyobje.price}`);
+    
+}
+
+// handleObj(user)
+handleObj({
+    username: "sam",
+    price : 199
+})
+
+
+// 9\
+
+const myNewArray = [200, 400, 300, 600,900]
+
+function returnSecVal(getArray) {
+
+    return getArray[2]
+    
+}
+
+console.log(returnSecVal(myNewArray));
+
+        // or 
+
+console.log(returnSecVal([200,400,100,600,2333]));
