@@ -30,13 +30,79 @@
 
 // 3 v imp interview
 
-let a = 300
+// let a = 300
 
-if(true){
-    let a = 10
-    const b =20
-    console.log("INNER:", a);
+// if(true){
+//     let a = 10
+//     const b =20
+//     console.log("INNER:", a);
+// }
+
+// console.log(a);
+// console.log(b);
+
+
+// nested scopes 
+
+
+function one() 
+{
+
+    const username ="Hitesh"
+
+        function two() {
+            const website = "Youtube"
+            console.log(username);
+            
+        }
+
+            // console.log(website);   no need
+
+            two()
 }
 
-console.log(a);
-// console.log(b);
+        one()
+
+if(true) {
+    const username = "hitesh"
+    if (username === "hitesh") {
+        const website = "  youtube"
+        console.log(username + website);
+        
+    }
+
+    // console.log(website);  no need 
+}
+
+// console.log(username);   no need
+
+
+
+
+
+// *****************************  INTERESTING *****************************
+
+addone(5)
+
+console.log(addone(5));
+
+function addone(num) {
+    return num + 1
+}
+
+
+// addone(5)
+
+//  upar and niche kae be rakha ke use kar akte hai 
+
+// console.log(addone(5));
+
+// addTwo(5) this is wrong 
+
+
+const addTwo = function (num) {
+
+    return num = 2 // expresion   
+}
+
+addTwo(5)
