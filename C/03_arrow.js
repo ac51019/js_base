@@ -50,3 +50,22 @@ const addTwo = (num1, num2) => {
 }
 
 console.log(addTwo(45,87));
+
+
+//implicit return
+
+const addTwos = (num1, num2) =>   num1 + num2 
+
+console.log(addTwos(4,87));
+
+
+//explicit return
+
+const addTo = (num1, num2) => ({username: "hitesh"})
+
+console.log(addTo(4,87));
+
+
+// const myArray = [2,3,4,5,6]
+
+// myArray .forEach()
